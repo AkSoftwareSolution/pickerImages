@@ -24,7 +24,48 @@ implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.0'
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 ```
-#Step 4. Add the MainActivity.java
+#Step 4. Add the activity_main.xml
+```activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <!-- activity_main.xml -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/pickBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Image"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+```
+#Step 5. Add the MainActivity.java
 ```MainActivity.java
 package com.aksoftwaresolution.myapp;
 
