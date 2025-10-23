@@ -137,10 +137,8 @@ Image picked successfully!
 
 
 🧑‍💻 Developed by
-
 🧩 Ak Software Solution
 📦 GitHub Repository
-
 🌐 Website
  (optional)
 💬 If you like this library, don’t forget to ⭐ it on GitHub!
