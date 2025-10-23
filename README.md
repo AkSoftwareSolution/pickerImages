@@ -39,7 +39,7 @@ dependencyResolutionManagement {
 🧩 Step 2 — Add the Dependency
 Add this line inside your build.gradle (Module: app) file:
 ```build.gradle
-implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.0'
+implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.1'
 ```
 ⚙️ Permissions
 Add these permissions inside your AndroidManifest.xml:
