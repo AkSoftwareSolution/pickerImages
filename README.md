@@ -116,18 +116,18 @@ public class MainActivity extends AppCompatActivity {
 ```
 🛡️ ProGuard / R8
 
-This library already includes a consumer-rules.pro, so if you use ProGuard or R8, no extra configuration is needed.
+#This library already includes a consumer-rules.pro, so if you use ProGuard or R8, no extra configuration is needed.
 
 It automatically preserves:
-
 All public API classes and methods
-
 Inner classes like result callbacks
-
 Kotlin metadata (if using Kotlin)
-
 Removes unnecessary Log statements in release builds
-🧠 Requirements
+
+
+
+
+###🧠 Requirements
 | Component                 | Version                  |
 | ------------------------- | ------------------------ |
 | **Android Gradle Plugin** | 7.0.0+                   |
