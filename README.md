@@ -24,7 +24,8 @@ implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.0'
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
 ```
-#Step 4. Add theMainActivity.java
+#Step 4. Add the MainActivity.java
+```MainActivity.java
 package com.aksoftwaresolution.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
