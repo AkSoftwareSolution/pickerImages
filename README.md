@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
-#🧠 Requirements
+🧠 Requirements
 | Component                 | Version                  |
 | ------------------------- | ------------------------ |
 | **Android Gradle Plugin** | 7.0.0+                   |
@@ -124,14 +124,14 @@ public class MainActivity extends AppCompatActivity {
 | **Language**              | Java / Kotlin Compatible |
 
 
-#🧪 Example Output
+🧪 Example Output
 
-#When a user selects an image:
+When a user selects an image:
 ```Image
 Image picked successfully!
 ```
 
-#✅ Base64 string is returned in the callback function.
+✅ Base64 string is returned in the callback function.
 
 
 
