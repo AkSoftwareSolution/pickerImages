@@ -136,12 +136,21 @@ Image picked successfully!
 
 
 
-🧑‍💻 Developed by
-🧩 Ak Software Solution
-📦 GitHub Repository
-🌐 Website
- (optional)
-💬 If you like this library, don’t forget to ⭐ it on GitHub!
+## 🧑‍💻 Developed by
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <h3>🧩 <b>Ak Software Solution</b></h3>
+      <p>
+        📦 <a href="https://github.com/AkSoftwareSolution/pickerImages" target="_blank">GitHub Repository</a> <br>
+        🌐 <a href="https://aksoftwaresolution.github.io" target="_blank">Website</a> (optional) <br>
+        💬 If you like this library, don’t forget to ⭐ it on GitHub!
+      </p>
+    </td>
+  </tr>
+</table>
+
 
 🪄 License
 ``` License
