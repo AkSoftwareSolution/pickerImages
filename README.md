@@ -8,14 +8,15 @@
 > ⚡ **A lightweight & modern Android library for picking images from gallery and getting Base64 encoded strings easily.**  
 > Made with ❤️ by **Ak Software Solution**
 
-🚀 Features
-Feature	Description
-🖼️ Image Picker	Pick any image from device gallery easily
-⚡ Base64 Output	Returns image as Base64 encoded string instantly
-🧠 Auto Permission	Handles permission checks automatically
-🪶 Lightweight	No extra dependencies or heavy code
-📱 Android 13+ Support	Includes READ_MEDIA_IMAGES permission
-💾 Save or Upload Ready	Perfect for APIs or image upload logic
+| Feature                 | Description                                      |
+| ----------------------- | ------------------------------------------------ |
+| 🖼️ Image Picker        | Pick any image from device gallery easily        |
+| ⚡ Base64 Output         | Returns image as Base64 encoded string instantly |
+| 🧠 Auto Permission      | Handles permission checks automatically          |
+| 🪶 Lightweight          | No extra dependencies or heavy code              |
+| 📱 Android 13+ Support  | Includes `READ_MEDIA_IMAGES` permission          |
+| 💾 Save or Upload Ready | Perfect for APIs or image upload logic           |
+
 
 
 ---
@@ -113,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 ```
+#🧠 Requirements
 | Component                 | Version                  |
 | ------------------------- | ------------------------ |
 | **Android Gradle Plugin** | 7.0.0+                   |
@@ -122,14 +124,16 @@ public class MainActivity extends AppCompatActivity {
 | **Language**              | Java / Kotlin Compatible |
 
 
-🧪 Example Output
+#🧪 Example Output
 
-When a user selects an image:
+#When a user selects an image:
 ```Image
 Image picked successfully!
 ```
 
-✅ Base64 string is returned in the callback function.
+#✅ Base64 string is returned in the callback function.
+
+
 
 
 🧑‍💻 Developed by
