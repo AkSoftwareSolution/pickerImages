@@ -23,7 +23,18 @@
 
 ## 📦 Installation  
 
-### 🧩 Step 1 — Add JitPack Repository  
+### 🧩 Step 1 — Add JitPack Repository
+
+Add it in your settings.gradle.kts at the end of repositories:
+```settings.gradle.kts
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url = uri("https://jitpack.io") }
+		}
+	}
+```
 
 Add this inside your **`settings.gradle`** file:  
 
@@ -37,7 +48,13 @@ dependencyResolutionManagement {
 }
 ```
 🧩 Step 2 — Add the Dependency
-Add this line inside your build.gradle (Module: app) file:
+Add this line inside your build.gradle.kts (Module: app) file:
+```gradle.kts
+
+    implementation("com.github.AkSoftwareSolution:pickerImages:1.1.1")
+
+```
+Add this line inside your build.gradle(Module: app) file:
 ```build.gradle
 implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.1'
 ```
