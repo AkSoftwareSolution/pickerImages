@@ -36,7 +36,7 @@ Add it in your settings.gradle.kts at the end of repositories:
 	}
 ```
 
-Add this inside your **`settings.gradle`** file:  
+Add this inside your java **`settings.gradle`** file:  
 
 ```gradle
 dependencyResolutionManagement {
@@ -54,7 +54,7 @@ Add this line inside your build.gradle.kts (Module: app) file:
     implementation("com.github.AkSoftwareSolution:pickerImages:1.1.1")
 
 ```
-Add this line inside your build.gradle(Module: app) file:
+Add this line inside your java  build.gradle(Module: app) file:
 ```build.gradle
 implementation 'com.github.AkSoftwareSolution:pickerImages:1.1.1'
 ```
@@ -93,6 +93,32 @@ Add these permissions inside your AndroidManifest.xml:
         android:layout_marginTop="20dp"/>
 </LinearLayout>
 ```
+🧩Example Layout kotlin (activity_main.xml)
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/pickBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ছবি নির্বাচন করুন" />
+</LinearLayout>
+
+
+```
 💡 Example Usage (MainActivity.java)
 ```MainActivity.java
 
@@ -130,6 +156,50 @@ public class MainActivity extends AppCompatActivity {
         pickBtn.setOnClickListener(v -> pickImages.pickIma());
     }
 }
+```
+💡 Example Usage (MainActivity.kt)
+```MainActivity.kt
+
+
+package com.aksoftwaresolution.myapp
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.Button
+import android.widget.Toast
+import com.aksoftwaresolution.pickimages.PickImages
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var pickImages: PickImages
+    private lateinit var imageView: ImageView
+    private lateinit var pickBtn: Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        imageView = findViewById(R.id.imageView)
+        pickBtn = findViewById(R.id.pickBtn)
+
+        // PickImages ইনিশিয়ালাইজ করা
+        pickImages = PickImages(this, imageView) { base64Image ->
+            Toast.makeText(this, "ছবি সফলভাবে নির্বাচিত হয়েছে!", Toast.LENGTH_SHORT).show()
+            // Log.d("BASE64_IMAGE", base64Image)
+        }
+
+        // বাটনে ক্লিক করলে গ্যালারি ওপেন করবে
+        pickBtn.setOnClickListener {
+            pickImages.pickIma()
+        }
+    }
+}
+
+
+
+
+
 ```
 🛡️ ProGuard / R8
 
