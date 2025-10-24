@@ -1,6 +1,6 @@
 # 🖼️ pickerImages Android Library  
 
-![Release](https://img.shields.io/badge/version-1.1.0-blue.svg?style=for-the-badge)
+![Release](https://img.shields.io/badge/version-1.1.1-blue.svg?style=for-the-badge)
 ![Build](https://img.shields.io/badge/build-passing-brightgreen.svg?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-Apache%202.0-orange.svg?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-Android-green.svg?style=for-the-badge)
